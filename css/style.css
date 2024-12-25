@@ -1,0 +1,222 @@
+body {
+  background-color: #F7ECDE;
+ }
+ .title {
+   font-size: 50px;
+   font-family: "Pacifico", cursive;
+   color: #352e28;
+   position: relative; 
+   z-index: 1; 
+ 
+ }
+ .title::before {
+   content: ''; 
+   position: absolute;
+   bottom:4px; 
+   left: 0;
+   right: 0;
+   height: 28%; 
+   background-color: #FEC260; 
+   z-index: -1; 
+   transition: height 0.3s ease; 
+ }
+ 
+ .title:hover::before {
+   height: 56%; 
+ }
+ 
+ .dotted-line {
+   border-bottom: 2px dotted #000; 
+ }
+
+ .book-card p {
+   font-weight: 500; 
+   background-clip: text; 
+   font-family: "Righteous", cursive;
+   font-size: 25px;
+   background: linear-gradient(120deg, rgba(60,165,92,1) 30%, rgba(181,172,73,1) 55%);
+ 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ 
+ .label {
+   font-family:"PT Sans Caption",sans-serif;
+   font-size: 16px;
+ }
+ 
+ .input-container {
+   position: relative;
+ }
+ 
+ .form-control.valid {
+   border-color: green;
+   box-shadow: 0 0 5px green;
+ }
+ 
+ .form-control.valid + .valid-icon {
+   display: block; 
+   color: green;
+ }
+ 
+ .form-control.invalid {
+   border-color: red;
+   box-shadow: 0 0 5px red;
+ }
+ 
+ .form-control.invalid + .invalid-icon {
+   display: block; 
+   color: red;
+ }
+ 
+ .valid-icon, .invalid-icon {
+   display: none;
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+ 
+ .form-control:focus + .valid-icon, .form-control:focus + .invalid-icon {
+   display: block;
+ }
+ .form-control::placeholder {
+   font-family: "PT Sans Caption",sans-serif;  
+   font-weight: 400;               
+    color: #6C757D;
+   font-size: 16px;
+ }
+ .form-control:focus {
+   border-color: rgb(246, 106, 106); 
+   box-shadow: 0 0 0 0.25rem rgba(253, 186, 78, 0.3);  
+   
+ }
+ 
+ .submit , .table {
+  
+   font-family: 
+   "PT Sans Caption",sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+ }
+ 
+ .table {
+   background-color: #F8F9FA;
+ }
+ 
+ 
+ 
+
+ .visit-btn {
+   background-color: #9eb23b; 
+   color: white; 
+   padding: 8px 10px; 
+   border-radius: 5px; 
+   text-decoration: none; 
+   width: 80px; 
+ margin: 10px 10px;
+   transition: background-color 0.3s ease, transform 0.3s ease; 
+ }
+ 
+ .visit-btn:hover {
+   background-color: #8A9E23; 
+   transform: scale(1.1); 
+ }
+ 
+ .delete-btn {
+   background-color: red; 
+   color: white; 
+   padding: 8px 5px;
+   border-radius: 5px; 
+   border: none; 
+   width: 80px; 
+   margin: 10px 10px;
+ 
+   transition: background-color 0.3s ease, transform 0.3s ease; 
+ }
+ 
+ .delete-btn:hover {
+   background-color: #D30820; 
+ }
+ 
+ .visit-btn i, .delete-btn i {
+   margin-right: 3px; 
+   font-size: 16px;
+ }
+ 
+ 
+
+ .form-control {
+   transition: box-shadow 0.3s ease, border-color 0.3s ease;
+ }
+ 
+ 
+ .form-control:focus {
+   outline: none; 
+ }
+ 
+ 
+
+ .form-control {
+   transition: box-shadow 0.3s ease, border-color 0.3s ease;
+ }
+ 
+
+ .form-control.valid {
+   border-color: green;
+   box-shadow: 0 0 5px green; 
+ }
+ 
+ 
+ .form-control.invalid {
+   border-color: red;
+   box-shadow: 0 0 5px red; 
+ }
+ 
+ .label-valid {
+   color: green;
+   font-weight: bold;
+ }
+ 
+ .label-invalid {
+   color: red;
+   font-weight: bold;
+ }
+ 
+ 
+ .valid-icon {
+   font-size: 13px;
+   color: green;
+   display: none; 
+   transform: scale(1.2); 
+   transition: transform 0.3s ease; 
+ }
+ 
+ 
+ .invalid-icon {
+   font-size: 13px;
+   color: red; 
+   display: none; 
+   transform: scale(1.2); 
+   transition: transform 0.3s ease; 
+ }
+ 
+ 
+ .valid-icon, .invalid-icon {
+   border-radius: 50%; 
+   padding: 12px; 
+   background-color: transparent; 
+ }
+ 
+ .form-control.valid + .label .valid-icon {
+   display: inline; /
+ }
+ 
+ .form-control.invalid + .label .invalid-icon {
+   display: inline; 
+ }
+ 
+ 
+ 
+ 
